@@ -6,9 +6,9 @@ An 8-button, ESP32-powered soundboard. A custom PCB, a 3D-printed enclosure, and
 
 ## Features
 
-- **Custom PCB.** Eight tactile switches, the ESP32 dev board, and the audio amplifier are all soldered to one board, so there's no breadboard or loose jumper wires.
+- **Custom PCB.** Eight tactile switches, the ESP32 dev board, and the audio amplifier are all soldered to one board.
 - **ESP32-WROOM-32D.** Runs the firmware, reads the buttons, and streams audio over I²S.
-- **MAX98357A I²S Class-D amplifier.** Turns the ESP32's digital audio stream straight into speaker output. There's no separate DAC, and the analog signal path is short.
+- **MAX98357A I²S Class-D amplifier.** Turns the ESP32's digital audio stream straight into speaker output. No separate DAC and the analog signal path is short.
 - **Mini speaker.** Sits in its own pocket in the case.
 - **3D-printed enclosure.** Holds the PCB, has integrated key caps for all 8 buttons, and leaves the USB-C port open for power and programming.
 - **Swappable sounds.** The clips are stored on the ESP32's flash using LittleFS. To change a sound, replace a WAV file and upload the filesystem again.
@@ -23,7 +23,7 @@ An 8-button, ESP32-powered soundboard. A custom PCB, a 3D-printed enclosure, and
 | MAX98357A I²S amplifier breakout | Class-D, mono |
 | Mini speaker | Connects to the amp's screw terminal |
 | 8× tactile switches | Active-low, using the ESP32's internal pull-ups |
-| Custom PCB + 3D-printed case | |
+| Custom PCB + 3D-printed case |
 
 ### Pin map
 
